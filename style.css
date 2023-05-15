@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(210, 36%, 96%);
+}
+
+.item-img{
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    /* grid-template: '. first-item second-item .' 20rem / 5% 45% 45% 5%;  */
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    margin: 5rem auto;
+    place-items: center;
+    column-gap: 2.5rem;
+}
+
+/* .grid-item1{
+    grid-area: first-item;
+}
+
+.grid-item2{
+    grid-area: second-item;
+} */
+
+.heading{
+    color: hsl(205, 72%, 37%);
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.upper-item-content{
+    margin-bottom: 2em;
+}
+
+.item-content{
+    color: hsl(209, 23%, 60%);
+    line-height: 1.3;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.buttons-container{
+    margin-top: 1.3rem;
+}
+
+.buttons-container button{
+    border: none;
+    background-color: hsl(209, 61%, 16%);
+    color: white;
+    padding: 0.6rem 1rem;
+    margin-right: 0.8rem;
+    line-height: 1.2;
+}
+
+.buttons-container button p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+span{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.annoucement-date{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
