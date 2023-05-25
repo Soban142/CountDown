@@ -50,7 +50,11 @@ body{
 }
 
 .buttons-container{
+    display: flex;
     margin-top: 1.3rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .buttons-container button{
@@ -79,4 +83,22 @@ span{
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 3px;
+}
+
+
+@media screen and (max-width: 924px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 95vw;
+        row-gap: 1.5rem;
+    }    
+}
+
+@media screen and (max-width: 415px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 100vw;
+        row-gap: 1.5rem;
+        margin: 2rem auto;
+    }    
 }
